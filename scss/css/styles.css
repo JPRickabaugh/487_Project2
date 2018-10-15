@@ -1,0 +1,243 @@
+@supports(grid-area:auto) {
+
+  #video{
+   position: relative;
+   background: transparent;
+  }
+
+  .ytplayer-container{
+   position: absolute;
+   top: 0;
+   z-index: -1;
+  }
+
+}
+
+.sliderpage {
+  display: grid;
+  width: 800px;
+  padding-left: 0%;
+  padding-right: 0%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px 150px;
+  grid-template-areas:
+    "txt txt map map map"
+    "txt txt map map map"
+    "txt txt coin fct fct";
+}
+
+
+#agslider {
+  height: auto;
+}
+
+.textsection {
+  grid-area: txt;
+  background-color: #F8F8F8;
+  border-style: dashed;
+  border-color: #DCDCDC;
+  border-width: 1px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.mapsection {
+  grid-area: map;
+  background-color: #F8F8F8;
+  border-style: dashed;
+  border-color: #DCDCDC;
+  border-width: 1px;
+  border-right: none;
+  border-left: none;
+}
+
+.coinsection {
+  width: 100px;
+  grid-area: coin;
+  background-color: #F8F8F8;
+}
+
+.factsection {
+  grid-area: fct;
+  background-color: #F8F8F8;
+}
+
+.maintext {
+  color: black;
+  font-size: 10pt;
+  padding: 10px;
+}
+
+#titlediv {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 0px;
+  background-color: #F8F8F8;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+#titletext {
+  font-size: 30pt;
+  text-align: center;
+}
+
+.maptitle{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.maps{
+  height: auto;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 25px;
+}
+
+.coins {
+  height: 80%;
+  width: auto;
+  margin-top: 20%;
+  margin-left: 20%;
+}
+
+.factstext {
+  margin-top: 5%;
+  width: 300px;
+  font-size: 9pt;
+}
+
+@media screen and (max-width:768px) {
+  .sliderpage{
+    display: grid;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-columns: 500px;
+    grid-template-rows: 200px 300px 100px 100px;
+    grid-template-areas:
+      "map"
+      "txt"
+      "coin"
+      "fct"
+  }
+
+  .textsection {
+    grid-area: txt;
+    background-color: #F8F8F8;
+    border-style: dashed;
+    border-color: #DCDCDC;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .mapsection {
+    grid-area: map;
+    background-color: #F8F8F8;
+    border-style: dashed;
+    border-color: #DCDCDC;
+    border-width: 1px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  .coinsection {
+    width: 100%;
+    grid-area: coin;
+    background-color: #F8F8F8;
+  }
+
+  .coins {
+    height: auto;
+    width: 20%;
+    margin-top: 5px;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  .factsection {
+    grid-area: fct;
+    background-color: #F8F8F8;
+  }
+
+  .factstext {
+    margin-top: 5%;
+    width: 100%;
+    font-size: 9pt;
+  }
+
+  .maptitle{
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 0%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+
+  .maps{
+    height: 60%;
+    width: auto;
+    margin-left: 5%;
+    margin-top: 5px;
+  }
+
+  .maintext {
+    color: black;
+    font-size: 10pt;
+    padding-top: 10px;
+    width: 350px;
+  }
+
+  #titlediv {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0px;
+    background-color: #F8F8F8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+  }
+
+  #titletext {
+    font-size: 30pt;
+    text-align: center;
+  }
+
+  #video{
+    display: none;
+   position: relative;
+   background: transparent;
+  }
+
+  .ytplayer-container{
+   display
+   position: absolute;
+   top: 0;
+   z-index: -1;
+  }
+
+  .cd-horizontal-timeline.loaded {
+    /* show the timeline after events position has been set (using JavaScript) */
+    opacity: 1;
+    background-color: #F8F8F8;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DCDCDC;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+  }
+
+
+}
