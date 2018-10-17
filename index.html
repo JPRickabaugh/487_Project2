@@ -2,22 +2,23 @@
 <html>
 <head>
   <title>Alexander The Great</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" /> <!-- for responsiveness -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/> <!-- timeline css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css"/> <!-- timeline css -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.quiz-min.css" /> <!-- quiz css -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" /> <!-- personal css -->
 </head>
 <body>
-  <div id="video"></div>
+  <div id="video"></div> <!-- uses video plugin to play a looping background video -->
   <div id="titlediv">
     <h1 id="titletext">Alexander The Great</h1>
-  </div>
-  <section class="cd-horizontal-timeline">
-     <div class="timeline">
-        <div class="events-wrapper">
-           <div class="events">
+  </div> <!-- title -->
+  <section class="cd-horizontal-timeline"> <!-- Timeline/slider conainer div -->
+     <div class="timeline"> <!-- Timeline/slider -->
+        <div class="events-wrapper"> <!-- Top section contianing actual timeline w different sections -->
+           <div class="events"> <!-- timeline w different sections - list points act as sections. The styling on these lists is why i'm sure the quiz won't work -->
               <ol>
-                 <li><a href="#0" data-date="01/01/0001" class="selected">Origin</a></li>
+                 <li><a href="#0" data-date="01/01/0001" class="selected">Origin</a></li> <!-- each list point uses a data date to determine its poisition on the line, the selected class indicates that the site starts on this timeline section -->
                  <li><a href="#0" data-date="01/01/0002">King Alexander</a></li>
                  <li><a href="#0" data-date="01/01/0004">Conquest I: Asia Minor</a></li>
                  <li><a href="#0" data-date="01/01/0007">Conquest II: Egypt</a></li>
@@ -26,25 +27,21 @@
                  <li><a href="#0" data-date="01/01/0015">Settling Down</a></li>
                  <li><a href="#0" data-date="01/01/0017">Death</a></li>
                  <li><a href="#0" data-date="01/01/0018">Sources & Quiz</a></li>
-                 <!-- other dates here -->
               </ol>
-
-              <span class="filling-line" aria-hidden="true"></span>
-           </div> <!-- .events -->
-        </div> <!-- .events-wrapper -->
-
-        <ul class="cd-timeline-navigation">
-           <li><a href="#0" class="prev inactive">Prev</a></li>
-           <li><a href="#0" class="next">Next</a></li>
-        </ul> <!-- .cd-timeline-navigation -->
-     </div> <!-- .timeline -->
-
-     <div class="events-content">
-        <ol>
-           <li class="selected" data-date="01/01/0001">
-             <div class="sliderpage">
-               <div class="textsection">
-                 <p class="maintext">
+              <span class="filling-line" aria-hidden="true"></span> <!-- the line in the timeline that fills as you progress -->
+           </div>
+        </div>
+        <ul class="cd-timeline-navigation"> <!-- list that contains the buttons for navigating the timeline -->
+           <li><a href="#0" class="prev inactive">Prev</a></li> <!-- back button -->
+           <li><a href="#0" class="next">Next</a></li> <!-- next button -->
+        </ul>
+     </div>
+     <div class="events-content"> <!-- div that contains the different pages of the slider -->
+        <ol> <!-- list of different pages -->
+           <li class="selected" data-date="01/01/0001"> <!-- each slider is assigned the corresponding data-date of a point on the timeline -->
+             <div class="sliderpage"> <!-- standard div for each slider page, code within follows same general pattern for all slider pages   -->
+               <div class="textsection"> <!-- standard div for the text section in each slider page -->
+                 <p class="maintext"> <!-- p tag for text section -->
                    Alexander the Great was born to King Philip II of Macedon in 356 BCE. During his youth, Alexander learned science and political arts from Aristotle and was taught military tactics by two of his father's trusted generals, Antipater and Parmenion.
                    </br>
                    Alexander's first significant claim to martial fame occured when he led the Macedonian cavalry in a charge that won the battle of Chaeronia at the age of 18.
@@ -52,25 +49,25 @@
                    When Alexander was 20, his father was assassinated. Alexander used his loyal military connections to claim the throne - by murdering all other potential heirs, showing his affinity for ruthlessness early on.
                  </p>
                </div>
-               <div class="mapsection">
-                 <p class="maptitle">
+               <div class="mapsection"> <!-- standard div for map section in each slider page -->
+                 <p class="maptitle"> <!-- map title p tag -->
                    Extent of Alexander's Macedonian Empire
                  </p>
-                 <img src="img/Map Background V1.png" class="maps" alt="A map of Alexander's territory at the start of his reign." />
+                 <img src="img/Map Background V1.png" class="maps" alt="A map of Alexander's territory at the start of his reign." /> <!-- image of a map i designed in adobe illustrator and photoshop showing the extent of alexander's territories at the time the slide is relevant to. Map updates with each slide -->
                </div>
-               <div class="coinsection">
-                 <img src="img/alexcoin.png" class="coins" alt="An ancient Greek coin depicting Alexander the great"/>
+               <div class="coinsection"> <!-- small section designated for an image of a coin depicting alexander, associated as a graphic element of the fact section -->
+                 <img src="img/alexcoin.png" class="coins" alt="An ancient Greek coin depicting Alexander the great"/> <!-- image of coin -->
                </div>
-               <div class="factsection">
-                 <p class="factstext">
+               <div class="factsection"> <!-- div containing fact section -->
+                 <p class="factstext"> <!-- the actual text of the fact section -->
                    While most of the assistance Alexander had in taking the throne came from those loyal to him in the military, his mother, Olympia, also had a hand in the matter. Olympia ensured her son's ascent to the throne by killing the daughter of King Philip II and Cleopatra of Epirus.
                  </p>
                </div>
              </div>
            </li>
-           <li data-date="01/01/0002">
-             <div class="sliderpage">
-               <div class="textsection">
+           <li data-date="01/01/0002"> <!-- each slider is assigned the corresponding data-date of a point on the timeline -->
+             <div class="sliderpage"> <!-- standard div for each slider page, code within follows same general pattern for all slider pages   -->
+                <div class="textsection">
                  <p class="maintext">
                    Upon claiming the crown, Alexander decided to continue on his father's plans to lead a Greek-Macedonian army across the Hellespont to fight the Persians occupying the Greek states in Asia Minor.
                    </br>
@@ -95,8 +92,8 @@
                </div>
              </div>
            </li>
-           <li data-date="01/01/0004">
-             <div class="sliderpage">
+           <li data-date="01/01/0004"> <!-- each slider is assigned the corresponding data-date of a point on the timeline -->
+             <div class="sliderpage"> <!-- standard div for each slider page, code within follows same general pattern for all slider pages   -->
                <div class="textsection">
                  <p class="maintext">
                    With Greek support all but guaranteed, Alexander marched his army, known as the Hellenic League, across the Hellespont in the spring of 334 BCE. At the Granicus River, the Hellenic League defeated a strong Persian force before marching southward to free Aeolis and Ionia from the Pesians.
@@ -122,8 +119,8 @@
                </div>
              </div>
            </li>
-           <li data-date="01/01/0007">
-             <div class="sliderpage">
+           <li data-date="01/01/0007"> <!-- each slider is assigned the corresponding data-date of a point on the timeline -->
+             <div class="sliderpage"> <!-- standard div for each slider page, code within follows same general pattern for all slider pages   -->
                <div class="textsection">
                  <p class="maintext">
                    Continuing southward, Alexander set his gaze towards Egypt. In 332 BCE, Alexander easily besieged Gaza and continued onward to capture Egypt, which fell without much difficulty. Later that year, Alexander founded the city of Alexandria, designed as a hub for Greek culture and commerce in the region.
@@ -149,8 +146,8 @@
                </div>
              </div>
            </li>
-           <li data-date="01/01/0009">
-             <div class="sliderpage">
+           <li data-date="01/01/0009"> <!-- each slider is assigned the corresponding data-date of a point on the timeline -->
+             <div class="sliderpage"> <!-- standard div for each slider page, code within follows same general pattern for all slider pages   -->
                <div class="textsection">
                  <p class="maintext">
                    In 331 BCE, Alexander defeated an overwhelming Persian force at the Battle of Gaugamela, effectively collapsing the Persian army. He continued on to capture Susa with no resistance before arriving at Persepolis. According to Diodorus Siculus, Alexander started the fire which destroyed the main palace and most of the city as revenge for Xerxes burning the Acropolis in 480 BCE.
@@ -176,8 +173,8 @@
                </div>
              </div>
            </li>
-           <li data-date="01/01/0012">
-             <div class="sliderpage">
+           <li data-date="01/01/0012"> <!-- each slider is assigned the corresponding data-date of a point on the timeline -->
+             <div class="sliderpage"> <!-- standard div for each slider page, code within follows same general pattern for all slider pages   -->
                <div class="textsection">
                  <p class="maintext">
                    After conquering Persia, Alexander continued to Iran. In 327 BCE, he seized the fortress in Ariamazes. After capturing Prince Oxyartes, Alexander married his daughter, Rhoxana.
@@ -203,8 +200,8 @@
                </div>
              </div>
            </li>
-           <li data-date="01/01/0015">
-             <div class="sliderpage">
+           <li data-date="01/01/0015"> <!-- each slider is assigned the corresponding data-date of a point on the timeline -->
+             <div class="sliderpage"> <!-- standard div for each slider page, code within follows same general pattern for all slider pages -->
                <div class="textsection">
                  <p class="maintext">
                    Upon returning to Susa in 324 BCE, Alexander found that many of the satraps he entrusted with the rule of the area had abused their power, so he executed them and those who vandalized the tomb of Cyrus the Great at Pasargadae.
@@ -230,8 +227,8 @@
                </div>
              </div>
            </li>
-           <li data-date="01/01/0017">
-             <div class="sliderpage">
+           <li data-date="01/01/0017"> <!-- each slider is assigned the corresponding data-date of a point on the timeline -->
+             <div class="sliderpage"> <!-- standard div for each slider page, code within follows same general pattern for all slider pages -->
                <div class="textsection">
                  <p class="maintext">
                    In 324 BCE, Alexander's lifelong friend and second in command Hephaestion died from a fever. Alexander was inconsolable and declared a period of mourning usually reserved for kings.
@@ -257,46 +254,46 @@
                </div>
              </div>
            </li>
-           <li data-date="01/01/0018">
-             <div class="sliderpage">
+           <li data-date="01/01/0018"> <!-- each slider is assigned the corresponding data-date of a point on the timeline -->
+             <div class="sliderpage"> <!-- standard div for each slider page, code within follows same general pattern for all slider pages, this sliderpage is for the quiz and sources and is slightly different -->
                 <div class="textsection">
-                  <h1>Sources</h1>
-                  <p class="maintext">
-                    https://www.history.com/topics/ancient-history/alexander-the-great </br>
-                    https://www.metmuseum.org/toah/hd/alex/hd_alex.htm </br>
-                    https://www.britannica.com/biography/Alexander-the-Great </br>
-                    https://www.biography.com/people/alexander-the-great-9180468 </br>
-                    https://www.ancient.eu/Alexander_the_Great/ </br>
-                    http://www.silk-road.com/artl/alex.shtml </br>
-                    https://www.youtube.com/watch?v=RlKJDwViNKs&ab_channel=EpicHistoryTV
-                  </p>
-                </div>
-                <div class="mapsection">
-                  <div id="quiz">
-                    <div id="quiz-header">
-                      <h1>jQuery Quiz Plugin</h1>
+                  <div id="quiz"> <!-- quiz container div -->
+                    <div id="quiz-header"> <!-- header of quiz, contains title -->
+                      <h1>Quiz</h1>
+                      <p><a id="quiz-home-btn">Home</a></p> <!-- home button to return to start of quiz -->
                     </div>
-                    <div id="quiz-start-screen">
-                      <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
+                    <div id="quiz-start-screen"> <!-- div containing quiz start screen-->
+                      <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p> <!-- button to begin quiz -->
                     </div>
                   </div>
-                  <!-- Quiz HTML - couldn't make quiz work -->
+                </div>
+                <div class="mapsection" id="sourcesheader"> <!-- map section appropriated for sources -->
+                  <h1>Sources</h1>
+                  <p id ="sources" >
+                    <a href="https://www.history.com/topics/ancient-history/alexander-the-great"</a>History.com</br> <!-- link to source -->
+                    <a href="https://www.metmuseum.org/toah/hd/alex/hd_alex.htm"</a>Metmusem.com</br>
+                    <a href="https://www.britannica.com/biography/Alexander-the-Great"</a>Britannica.com</br>
+                    <a href="https://www.biography.com/people/alexander-the-great-9180468"</a>Biography.com</br>
+                    <a href="https://www.ancient.eu/Alexander_the_Great/"</a>Ancient.eu</br>
+                    <a href="http://www.silk-road.com/artl/alex.shtml"</a>Silk-road.com</br>
+                    <a href="https://www.youtube.com/watch?v=RlKJDwViNKs&ab_channel=EpicHistoryTV"</a>Alexander: Mutiny at Opis
+                  </p>
                 </div>
                 <div class="coinsection">
                 </div>
                 <div class="factsection">
                 </div>
-            </div>
-          </li>
-           <!-- other descriptions here -->
+             </div>
+           </li>
         </ol>
-     </div> <!-- .events-content -->
+     </div>
   </section>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="js/jquery.youtubebackground.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script> <!-- jquery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- jquery for youtube background -->
+  <script src="js/jquery.youtubebackground.js"></script> <!-- js youtube background -->
+  <script src="js/jquery.quiz-min.js"></script> <!-- jquery for quiz -->
+  <script src="js/main.js"></script> <!-- js for timeline -->
+  <script src="js/scripts.js"></script> <!-- personal scripts -->
+  <script src="js/quiz.js"></script> <!-- personal seperate scripts for quiz - still couldn't get to work -->
 </body>
 </html>

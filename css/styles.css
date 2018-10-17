@@ -3,15 +3,13 @@
   #video{
    position: relative;
    background: transparent;
-  }
+ } /* styling for div holding youtube background */
 
   .ytplayer-container{
    position: absolute;
    top: 0;
    z-index: -1;
-  }
-
-}
+  } /* positioning of youtube video background */
 
 .sliderpage {
   display: grid;
@@ -24,12 +22,7 @@
     "txt txt map map map"
     "txt txt map map map"
     "txt txt coin fct fct";
-}
-
-
-#agslider {
-  height: auto;
-}
+} /* grid setup for the slider pages */
 
 .textsection {
   grid-area: txt;
@@ -39,7 +32,7 @@
   border-width: 1px;
   border-left: none;
   border-bottom: none;
-}
+} /* styling for text section of grid/slider pages */
 
 .mapsection {
   grid-area: map;
@@ -49,24 +42,24 @@
   border-width: 1px;
   border-right: none;
   border-left: none;
-}
+} /* styling for map section */
 
 .coinsection {
   width: 100px;
   grid-area: coin;
   background-color: #F8F8F8;
-}
+} /*styling for coin section */
 
 .factsection {
   grid-area: fct;
   background-color: #F8F8F8;
-}
+} /*styling for facts section */
 
 .maintext {
   color: black;
   font-size: 10pt;
   padding: 10px;
-}
+} /* styling for main text */
 
 #titlediv {
   width: 30%;
@@ -75,13 +68,12 @@
   background-color: #F8F8F8;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
-}
+} /* title div styling */
 
 #titletext {
   font-size: 30pt;
   text-align: center;
-}
+} /* title text styling */
 
 .maptitle{
   width: 90%;
@@ -90,118 +82,45 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 0px;
-}
+} /* map title styling */
 
 .maps{
   height: auto;
   width: 90%;
   margin-left: 5%;
   margin-top: 25px;
-}
+} /* map image styling */
 
 .coins {
   height: 80%;
   width: auto;
   margin-top: 20%;
   margin-left: 20%;
-}
+} /* coin image styling */
 
 .factstext {
   margin-top: 5%;
   width: 300px;
   font-size: 9pt;
-}
+} /* facts text styling */
 
+#sourcesheader {
+  font-size: 10pt;
+  padding: 10px;
+} /* styling for header of sources section */
 
-/* QUIZ CSS BELOW UNTIL MEDIA QUERY */
-
-}
-#quiz-counter {
-  color: #88449a;
-}
-.quiz-container {
-    padding: 0.25em;
-    max-width: 650px;
-    margin: 1em auto;
-}
-
-.quiz-container a {
-    text-decoration: none;
-    color: #333;
-}
-
-#quiz-header,
-#quiz-start-screen,
-#quiz-results-screen,
-#quiz-counter {
-    text-align: center;
-}
-
-.question {
-    font-size: 1.25em;
-}
+#sources {
+  font-size: 8pt;
+  color: black;
+  padding: 10px;
+} /* styling for sources list */
 
 .answers {
-    list-style: none;
-    padding: 0;
-}
-
-.answers a {
-    display: block;
-    padding: 0.5em 1em;
-    margin-bottom: 0.5em;
-    background: #fff;
-}
-
-.answers a.correct {
-    background: #090;
-}
-.answers a.incorrect {
-    background: #c00;
-}
-
-.answers a.correct,
-.answers a.incorrect {
-    color: #fff;
-}
-
-#quiz-controls {
-    background: #63c5bc;
-    color: #111;
-    padding: 0.25em 0.5em 0.5em;
-    text-align: center;
-}
-
-#quiz-response {}
-#quiz-results {
-    font-size: 1.25em;
-}
-
-#quiz-buttons a,
-.quiz-container .quiz-button {
-    display: inline-block;
-    padding: 0.5em 1em;
-    background: #88449a;
-    color: #fff;
-}
-#quiz-buttons a {
-    background: #fff;
-    color: #333;
-}
-
-/* Quiz State Overrides */
-
-.quiz-results-state #quiz-controls {
-    background: none;
-    padding: 0;
-}
-.quiz-results-state #quiz-buttons a {
-    background: #88449a;
-    color: #fff;
-}
+  opacity: 1;
+} /* attempted to make answers visible since they won't appear for quiz - their opacity was set to 0 by default due to other code */
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px) { /* media query for mobile sizes */
   .sliderpage{
     display: grid;
     width: 90%;
@@ -214,7 +133,7 @@
       "txt"
       "coin"
       "fct"
-  }
+  } /* updated grid styling */
 
   .textsection {
     grid-area: txt;
@@ -224,7 +143,15 @@
     border-width: 1px;
     border-left: none;
     border-right: none;
-  }
+  } /*text sextion updated styling*/
+
+  .maintext {
+    color: black;
+    font-size: 10pt;
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 325px;
+  } /* main text updated styling */
 
   .mapsection {
     grid-area: map;
@@ -235,33 +162,7 @@
     border-right: none;
     border-bottom: none;
     border-left: none;
-  }
-
-  .coinsection {
-    width: 100%;
-    grid-area: coin;
-    background-color: #F8F8F8;
-  }
-
-  .coins {
-    height: auto;
-    width: 20%;
-    margin-top: 5px;
-    margin-left: 40%;
-    margin-right: 40%;
-  }
-
-  .factsection {
-    grid-area: fct;
-    background-color: #F8F8F8;
-  }
-
-  .factstext {
-    margin-top: 5%;
-    width: 100%;
-    font-size: 9pt;
-    padding-left: 10px;
-  }
+  } /* map section updated styling */
 
   .maptitle{
     width: 300px;
@@ -270,36 +171,38 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0px;
-  }
-
+  } /* map title updated styling */
 
   .maps{
     height: 60%;
     width: auto;
     margin-left: 5%;
     margin-top: 5px;
-  }
+  } /* map image updated styling */
 
-  .maintext {
-    color: black;
-    font-size: 10pt;
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 325px;
-  }
+  .coinsection {
+    width: 100%;
+    grid-area: coin;
+    background-color: #F8F8F8;
+  } /*coin section updated styling */
 
   .coins {
     height: 100%;
     width: auto;
     margin-top: 0%;
     margin-left: 20%;
-  }
+  } /* coin images updated styling */
+
+  .factsection {
+    grid-area: fct;
+    background-color: #F8F8F8;
+  } /* facts section updated styling */
 
   .factstext {
     margin-top: 0%;
     width: 300px;
     font-size: 9pt;
-  }
+  } /* fact text updated styling */
 
   #titlediv {
     width: 90%;
@@ -308,26 +211,25 @@
     background-color: #F8F8F8;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
-  }
+  } /* title div updated styling */
 
   #titletext {
     font-size: 30pt;
     text-align: center;
-  }
+  } /* title text udpated styling */
 
   #video{
-    display: none;
+   display: none;
    position: relative;
    background: transparent;
-  }
+  } /*video updated styling, removes video on mobile */
 
   .ytplayer-container{
-   display
+   display: none;
    position: absolute;
    top: 0;
    z-index: -1;
-  }
+  } /* ytplayer updated styling */
 
   .cd-horizontal-timeline.loaded {
     /* show the timeline after events position has been set (using JavaScript) */
@@ -341,7 +243,9 @@
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 0%;
-  }
+  } /* sets width of timeline to fullscreen along w other styling */
 
+
+}
 
 }
