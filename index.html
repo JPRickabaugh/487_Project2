@@ -3,9 +3,10 @@
 <head>
   <title>Alexander The Great</title>
   <meta content="width=device-width, initial-scale=1" name="viewport" /> <!-- for responsiveness -->
+  <meta name="description" content="An interactive timeline depicting the life and conquest of Alexander the Great"> <!-- SEO -->
+  <meta name="keywords" content="Alexander, Macedon, Persia, Darius, Philip, Porus, Egypt, Tyre, Greece, History, Conquest, Timeline, Slider, Educational, Empire, India, Great, Alexander The Great" /><!-- SEO -->
   <link rel="stylesheet" type="text/css" href="css/reset.css"/> <!-- timeline css -->
   <link rel="stylesheet" type="text/css" href="css/style.css"/> <!-- timeline css -->
-  <link rel="stylesheet" type="text/css" href="css/jquery.quiz-min.css" /> <!-- quiz css -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" /> <!-- personal css -->
 </head>
 <body>
@@ -257,15 +258,7 @@
            <li data-date="01/01/0018"> <!-- each slider is assigned the corresponding data-date of a point on the timeline -->
              <div class="sliderpage"> <!-- standard div for each slider page, code within follows same general pattern for all slider pages, this sliderpage is for the quiz and sources and is slightly different -->
                 <div class="textsection">
-                  <div id="quiz"> <!-- quiz container div -->
-                    <div id="quiz-header"> <!-- header of quiz, contains title -->
-                      <h1>Quiz</h1>
-                      <p><a id="quiz-home-btn">Home</a></p> <!-- home button to return to start of quiz -->
-                    </div>
-                    <div id="quiz-start-screen"> <!-- div containing quiz start screen-->
-                      <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p> <!-- button to begin quiz -->
-                    </div>
-                  </div>
+                  <iframe src="quiz.html"></iframe> <!-- iframe to separate quiz HTML page since quiz wouldn't function due to other plugins -->
                 </div>
                 <div class="mapsection" id="sourcesheader"> <!-- map section appropriated for sources -->
                   <h1>Sources</h1>

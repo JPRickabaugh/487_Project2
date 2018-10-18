@@ -119,6 +119,10 @@
   opacity: 1;
 } /* attempted to make answers visible since they won't appear for quiz - their opacity was set to 0 by default due to other code */
 
+iframe {
+  height: 600px;
+}
+
 
 @media screen and (max-width:768px) { /* media query for mobile sizes */
   .sliderpage{
